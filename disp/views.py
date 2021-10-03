@@ -7,6 +7,5 @@ def add(request):
     fin=request.GET["evaluation_string"]
     url=Shortener()
     short_url=url.tinyurl.short(fin)
-    
     return render(request,"result.html",{'x':short_url})
     
